@@ -1,0 +1,17 @@
+# 업데이트, 백업 파일 무시
+*_업데이트.py
+*_백업.py
+
+# .env 파일 무시
+.env
+
+# test용 파일 무시
+test용_파일_짬통/
+test_case_data/
+multimodal_te/
+DB/**/*.pdf
+api_autogen/
+멀티모달용 데이터모음/
+테스트했는데 실패한 것들/
+__pycache__/
+.cache/
