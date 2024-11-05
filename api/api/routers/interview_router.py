@@ -81,6 +81,7 @@ import asyncio
 @router.post("/answer/")
 async def answer_interview(request: AnswerRequest):
     global interview_sessions
+    question_id = None  # 초기값 설정
     try:
         # 사용자 ID를 사용하여 해당 면접 모델을 불러옴
         interview_assistant = interview_sessions.get(request.user_id).interview_assistant
@@ -91,7 +92,7 @@ async def answer_interview(request: AnswerRequest):
         question_id_in_use = interview_sessions.get(request.user_id).question_id_in_use
         interview_id = interview_sessions.get(request.user_id).interview_id
         response, feedback, exemplary_answer = interview_assistant.invoke(request.user_id, request.user_answer, question_id_in_use)
-        
+
         # 데이터베이스에 경로 정보 저장
         update_feedback_to_db(request.user_answer, feedback, exemplary_answer, question_id)
         question_id = save_question_to_db(response, interview_id)
