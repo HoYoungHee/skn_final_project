@@ -10,6 +10,7 @@ test용_파일_짬통/
 test_case_data/
 multimodal_te/
 DB/**/*.pdf
+!DB/
 api_autogen/
 멀티모달용 데이터모음/
 테스트했는데 실패한 것들/
