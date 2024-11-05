@@ -17,7 +17,7 @@ AI 기반 모의 면접 시스템으로, 지원자의 이력서를 바탕으로 
 - 프로젝트를 로컬에 복제 후 필요한 패키지 설치
 
 ### 2. Docker 설정
-- `interview_end_chacker_lamma` 설정 파일을 통해 LLaMA 모델 실행
+- `interview_end_chacker_llamma` 설정 파일을 통해 Llama 모델 실행
   
 - **예시**:
   ```plaintext
@@ -35,7 +35,7 @@ AI 기반 모의 면접 시스템으로, 지원자의 이력서를 바탕으로 
 ## 주요 파일 설명
 - **api**
 api: AI 모델을 사용하여 면접 질문을 생성하고 사용자 응답을 처리하는 메인 API 코드 포함
-- **interview_end_chacker_lamma**
+- **interview_end_chacker_llama**
 역할: 면접 종료 여부를 판단하는 에이전트 설정
-설정: LLaMA 모델을 사용하며, 창의성 및 응답 방식 조정 가능
+설정: Llama 모델을 사용하며, 창의성 및 응답 방식 조정 가능
 
