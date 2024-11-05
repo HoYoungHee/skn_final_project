@@ -34,11 +34,11 @@ AI 기반 모의 면접 시스템으로, 지원자의 이력서를 바탕으로 
 ## 폴더 구조
 skn_final_project-main/
 │
-├── .gitignore               # Git 무시 파일
-├── api/                     # API 코드 및 설정 폴더
-│   ├── api/                 # 메인 API
+├── .gitignore                   # Git 무시 파일
+├── api/                         # API 코드 및 설정 폴더
+│   ├── api/                     # 메인 API
 │   └── interview_end_chacker_lamma  # 면접 종료 판단 설정 파일
-├── readme.md                # 프로젝트 설명
+├── readme.md                    # 프로젝트 설명
 
 ## 주요 파일 설명
 - **api**
