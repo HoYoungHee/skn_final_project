@@ -14,10 +14,11 @@ AI 기반 모의 면접 시스템으로, 지원자의 이력서를 바탕으로 
 ## 설치 및 실행
 
 ### 1. 환경 설정
-- 프로젝트를 로컬에 복제 후 필요한 패키지를 설치합니다.
+- 프로젝트를 로컬에 복제 후 필요한 패키지 설치
 
 ### 2. Docker 설정
-- `interview_end_chacker_lamma` 설정 파일을 통해 LLaMA 모델을 실행합니다.
+- `interview_end_chacker_lamma` 설정 파일을 통해 LLaMA 모델 실행
+  
 - **예시**:
   ```plaintext
   FROM llama3.1
@@ -31,18 +32,9 @@ AI 기반 모의 면접 시스템으로, 지원자의 이력서를 바탕으로 
   입력된 문장을 분석하여 면접 종료 여부를 판단합니다.
   종료라면 '종료'
 ---
-## 폴더 구조
-skn_final_project-main/
-│
-├── .gitignore                   # Git 무시 파일
-├── api/                         # API 코드 및 설정 폴더
-│   ├── api/                     # 메인 API
-│   └── interview_end_chacker_lamma  # 면접 종료 판단 설정 파일
-├── readme.md                    # 프로젝트 설명
-
 ## 주요 파일 설명
 - **api**
-api: AI 모델을 사용하여 면접 질문을 생성하고 사용자 응답을 처리하는 메인 API 코드가 포함됩니다.
+api: AI 모델을 사용하여 면접 질문을 생성하고 사용자 응답을 처리하는 메인 API 코드 포함
 - **interview_end_chacker_lamma**
 역할: 면접 종료 여부를 판단하는 에이전트 설정
 설정: LLaMA 모델을 사용하며, 창의성 및 응답 방식 조정 가능
